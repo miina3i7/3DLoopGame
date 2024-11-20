@@ -20,7 +20,7 @@ public class PlayerAttack : MonoBehaviour
         {
             IsAttack = false;
         }
-        Debug.Log(IsAttack);
+        
     }
     void PAttack()
     {

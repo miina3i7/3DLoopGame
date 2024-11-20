@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5644419003307122129}
   - component: {fileID: 1109131328908162619}
   - component: {fileID: 1563763029568004144}
+  - component: {fileID: 3155047164428739183}
   m_Layer: 0
   m_Name: Handrail_B
   m_TagString: Spawn
@@ -107,6 +108,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 805953493313922169, guid: cf01e1798f9294a4e9ac74376f8857ed, type: 3}
+--- !u!114 &3155047164428739183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3931780104673798011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b43dc0b65b99a2498f81aedbfd632d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Reset: 0
 --- !u!1 &6462806582546813257
 GameObject:
   m_ObjectHideFlags: 0

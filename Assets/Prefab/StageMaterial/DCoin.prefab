@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2250525241919157123}
   - component: {fileID: 1499930697258512688}
   - component: {fileID: 7635256657014882287}
-  - component: {fileID: 8688659022525344459}
+  - component: {fileID: 6706416123030983265}
+  - component: {fileID: 712578466716383929}
   m_Layer: 0
   m_Name: DCoin
   m_TagString: Untagged
@@ -84,7 +85,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8688659022525344459
+--- !u!114 &6706416123030983265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2194685565831091690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e6a2adc1b098548aebc63435ebea41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!64 &712578466716383929
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

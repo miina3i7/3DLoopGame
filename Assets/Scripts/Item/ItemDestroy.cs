@@ -1,19 +1,13 @@
 using UnityEngine;
 
-public class ItemController : MonoBehaviour
+public class ItemDestroy : MonoBehaviour
 {
-    void Update()
-    {
-        // 必要な処理があればここに記述
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("5");
         if(collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("5");
             gameObject.SetActive(false);
         }   
     }
 }
-
