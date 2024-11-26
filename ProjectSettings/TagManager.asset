@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - DCoin
   - Enemy
+  - Attakc
   layers:
   - Default
   - TransparentFX
