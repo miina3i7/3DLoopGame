@@ -31,7 +31,7 @@ public class CharactorPara : MonoBehaviour
     {
         //Player
         //Enemyに当たったとき
-        if(myTag == "Palyer" && touchEnemy)
+        if(myTag == "Player" && touchEnemy)
         {
             HP -= damage;
         }
@@ -58,20 +58,37 @@ public class CharactorPara : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        
         if(collision.gameObject.CompareTag("Player"))
         {
-            touchPlayer = true;
-            //当たったキャラのCharaParaスクリプトからAp情報を取得し、daamageに入れる
-            CharactorPara touch = collision.gameObject.GetComponent<CharactorPara>();
-            damage = touch.Attack;
+            foreach(Transform child in collision.transform)
+            {
+                if(child.CompareTag("Attakc"))
+                {
+                    if(collision.gameObject.CompareTag("Attakc"))
+                    {
+                        touchPlayer = true;
+                        //当たったキャラのCharaParaスクリプトからAp情報を取得し、daamageに入れる
+                        CharactorPara touch = collision.gameObject.GetComponent<CharactorPara>();
+                        damage = touch.Attack;
+                    }
+                }
+            }
         }
         
         else if(collision.gameObject.CompareTag("Enemy"))
         {
-            touchEnemy = true;
-            CharactorPara touch = collision.gameObject.GetComponent<CharactorPara>();
-            damage = touch.Attack;
+            foreach(Transform child in collision.transform)
+            {
+                if(child.CompareTag("Attakc"))
+                {
+                    if(collision.gameObject.CompareTag("Attakc"))
+                    {
+                        touchEnemy = true;
+                        CharactorPara touch = collision.gameObject.GetComponent<CharactorPara>();
+                        damage = touch.Attack;
+                    }
+                }
+            }
         }
     }
     private void OnCollisionExit(Collision collision)
